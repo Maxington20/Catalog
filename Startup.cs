@@ -33,6 +33,7 @@ namespace Catalog
         public void ConfigureServices(IServiceCollection services)
         {
             // mongo needs to be told how to handle our guid and datetimeoffset properties
+            // as they don't handle them natively
             BsonSerializer.RegisterSerializer(new GuidSerializer(BsonType.String));
             BsonSerializer.RegisterSerializer(new DateTimeOffsetSerializer(BsonType.String));
 
