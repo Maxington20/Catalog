@@ -1,4 +1,5 @@
 *.dll
 *.txt
 bin/
-.vscode/
+[Oo]bj/
+obj/Catalog.csproj.nuget.dgspec.json
